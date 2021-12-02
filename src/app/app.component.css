@@ -1,0 +1,236 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1,
+button
+{
+    font-family: sans-serif;
+}
+
+body
+{
+    /*overflow-x: hidden;*/
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: rgb(61, 61, 60);
+}
+
+/*---SECTION 2---*/
+.sect2
+{
+    margin-top: 100px;
+    position: relative;
+    background-color: white;
+    padding-top: 50px 50px 50px 50px;
+}
+
+.sect2 .container
+{
+    width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.sect2 .title
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgb(61, 61, 60);
+    font-size: 3em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.sect2 .title::before
+{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(61, 61, 60);
+    clip-path: polygon(
+        0 0,
+        100% 0,   
+        100% 80%,
+        80% 35%,
+        64% 100%,
+        48% 35%,
+        31% 100%,
+        16% 35%,
+        0 80%
+    );
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sect2 .content
+{
+    color: white;
+    height: 200px;
+}
+
+.sect2 .titre
+{
+    display: flex;
+    align-items: center;
+}
+
+.sect2 p
+{
+    max-width: 600px;
+    font-size: 5em;
+    margin-top: 150px;
+    margin-left: 60px;
+}
+
+.sect2 .content
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-top .left,
+.content-top .right
+{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.sect2 .content
+{
+    margin-bottom: 50px;
+}
+
+.sect2 .formulaire
+{
+    width: 100%;
+}
+.sect2 input[type = submit]
+{
+    width: 100%;
+    color: rgb(61, 61, 60);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-top: 5%;
+}
+
+.sect2 input[type = submit]:hover
+{
+    background-color: rgb(160, 158, 155);
+}
+
+select
+{
+    width: 100%;
+    color: rgb(61, 61, 60);
+    padding: 12px 20px;
+    border: none;
+    border-bottom: 2px solid rgb(61, 61, 60);
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-top: 1%;
+}
+
+.sect2 input[type = text]
+{
+    width: 94.5%;
+    height: 50px;
+    color: rgb(61, 61, 60);
+    padding: 12px 20px;
+    border: none;
+    font-size: 3em;
+    border-bottom: 2px solid rgb(61, 61, 60);
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+.sect2 #value2
+{
+    width: 94.5%;
+    height: 50px;
+    color: rgb(61, 61, 60);
+    padding: 12px 20px;
+    border: none;
+    font-size: 3em;
+    border-radius: 5px;
+    margin-top: 10%;
+}
+
+@media(min-width: 1500px)
+{
+    .content-top .left
+    {
+        max-width: 700px;
+    }
+
+    .content-bottom .right
+    {
+        max-width: 700px;
+    }
+}
+
+@media(max-width: 1500px)
+{
+    .sect2 .content
+    {
+        margin: 50px 0;
+    }
+
+    .content-top
+    {
+        flex-direction: column;
+    }
+
+    .sect2 .container
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sect2 .title
+    {
+        font-size: 3em;
+    }
+
+    .sect2 p
+    {
+        max-width: 900px;
+        margin: 0 50px;
+    }
+
+    .sect2 .content-top .left
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .sect2 .titre
+    {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
